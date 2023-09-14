@@ -1,0 +1,8 @@
+setwd("c:/Users/Hp/Desktop/R Programming/excel files/")
+library(XLConnect)
+wb=loadWorkbook("c:/Users/Hp/Desktop/R Programming/excel files/cats.xlsx")
+createSheet(wb,"air")
+writeWorksheet(wb,airquality,"air")
+saveWorkbook(wb)
+library(openxlsx)
+openXL("c:/Users/Hp/Desktop/R Programming/excel files/cats.xlsx")
